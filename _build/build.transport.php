@@ -101,7 +101,7 @@ if (is_array($settings) && !empty($settings)) {
 	$attributes= array(
 		xPDOTransport::UNIQUE_KEY => 'key',
 		xPDOTransport::PRESERVE_KEYS => true,
-		xPDOTransport::UPDATE_OBJECT => false,
+		xPDOTransport::UPDATE_OBJECT => BUILD_SETTING_UPDATE,
 	);
 	foreach ($settings as $setting) {
 		$vehicle = $builder->createVehicle($setting,$attributes);

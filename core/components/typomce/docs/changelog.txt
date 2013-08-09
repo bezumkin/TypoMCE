@@ -2,6 +2,7 @@
 TypoMCE 4.4.4
 ====================================
 - Forked and renamed to "TypoMCE"
+- Added plugin "typograf"
 
 
 

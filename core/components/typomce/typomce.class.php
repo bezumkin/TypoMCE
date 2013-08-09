@@ -57,8 +57,8 @@ class TypoMCE {
 			'content_css' => $this->context->getOption('editor_css_path'),
 			'element_list' => '',
 			'entities' => '',
-			'execcommand_callback' => 'typo.onExecCommand',
-			'file_browser_callback' => 'typo.loadBrowser',
+			'execcommand_callback' => 'Tiny.onExecCommand',
+			'file_browser_callback' => 'Tiny.loadBrowser',
 			'force_p_newlines' => true,
 			'force_br_newlines' => false,
 			'formats' => array(
@@ -349,48 +349,3 @@ class TypoMCE {
 		return '';
 	}
 }
-
-/*
- *
-$formatMap = array(
-	'alignleft' => array(
-		'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img',
-		'classes' => 'left',
-	),
-	'aligncenter' => array(
-		'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img',
-		'classes' => 'center',
-	),
-	'alignright' => array(
-		'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img',
-		'classes' => 'right',
-	),
-	'alignfull' => array(
-		'selector' => 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img',
-		'classes' => 'full',
-	),
-	'bold' => array(
-		'inline' => 'span',
-		'classes' => 'bold',
-	),
-	'italic' => array(
-		'inline' => 'span',
-		'classes' => 'italic',
-	),
-	'underline' => array(
-		'inline' => 'span',
-		'classes' => 'underline',
-		'exact' => true,
-	),
-	'strikethrough' => array(
-		'inline' => 'del',
-	),
-	'forecolor' => array(
-		'inline' => 'span',
-		'classes' => 'hilitecolor',
-		'styles' => array(
-			'backgroundColor' => '%value',
-		),
-	),
-);
- */

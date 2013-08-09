@@ -10,7 +10,7 @@ $tmp = array(
 	)
 	,'custom_plugins' => array(
 		'xtype' => 'textfield'
-		,'value' => 'style,advimage,advlink,modxlink,searchreplace,print,contextmenu,paste,fullscreen,noneditable,nonbreaking,xhtmlxtras,visualchars,media'
+		,'value' => 'style,advimage,advlink,modxlink,searchreplace,print,contextmenu,paste,fullscreen,noneditable,nonbreaking,xhtmlxtras,visualchars,media,typograf'
 		,'area' => 'general'
 	)
 	,'editor_theme' => array(
@@ -161,7 +161,7 @@ $tmp = array(
 
 	,'custom_buttons1' => array(
 		'xtype' => 'textfield'
-		,'value' => 'undo,redo,selectall,separator,pastetext,pasteword,separator,search,replace,separator,nonbreaking,hr,charmap,separator,image,modxlink,unlink,anchor,media,separator,cleanup,removeformat,separator,fullscreen,print,code,help'
+		,'value' => 'undo,redo,selectall,separator,typograf,separator,pastetext,pasteword,separator,search,replace,separator,nonbreaking,hr,charmap,separator,image,modxlink,unlink,anchor,media,separator,cleanup,removeformat,separator,fullscreen,print,code,help'
 		,'area' => 'custom-buttons'
 	)
 	,'custom_buttons2' => array(
