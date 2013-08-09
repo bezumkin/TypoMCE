@@ -2,8 +2,9 @@
 TypoMCE 4.4.4
 ====================================
 - Forked and renamed to "TypoMCE"
-- Added plugin "typograf"
 - Upgrade TinyMCE to 3.5.8
+- Added plugin "typograf"
+- Made Ctrl+S works
 
 
 

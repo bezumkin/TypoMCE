@@ -1,6 +1,7 @@
 <script type="text/javascript">
 //<![CDATA[
 Tiny.config = <?php echo $this->modx->toJSON($this->properties); ?>;
+Tiny.config.save_onsavecallback = function() {MODx.activePage.submitForm();};
 Tiny.config.setup = function(ed) {
     ed.onInit.add(Tiny.onLoad);
     ed.onKeyUp.add(Tiny.onChange);

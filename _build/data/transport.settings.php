@@ -10,7 +10,7 @@ $tmp = array(
 	)
 	,'custom_plugins' => array(
 		'xtype' => 'textfield'
-		,'value' => 'style,advimage,advlink,modxlink,searchreplace,print,contextmenu,paste,fullscreen,noneditable,nonbreaking,xhtmlxtras,visualchars,media,typograf'
+		,'value' => 'style,advimage,advlink,modxlink,searchreplace,print,contextmenu,paste,fullscreen,noneditable,nonbreaking,xhtmlxtras,visualchars,media,typograf,save'
 		,'area' => 'general'
 	)
 	,'editor_theme' => array(
