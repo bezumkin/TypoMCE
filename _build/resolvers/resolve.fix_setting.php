@@ -27,22 +27,23 @@
  */
 $success= true;
 if ($pluginid= $object->get('id')) {
-    switch ($options[xPDOTransport::PACKAGE_ACTION]) {
-        case xPDOTransport::ACTION_INSTALL:
-        case xPDOTransport::ACTION_UPGRADE:
-            $object->xpdo->log(xPDO::LOG_LEVEL_INFO,'Attempting to fix forced_root_block setting for TinyMCE.');
-            $setting = $object->xpdo->getObject('modSystemSetting',array('key' => 'tiny.forced_root_block'));
-            if ($setting && $setting->get('xtype') == 'combo-boolean') {
-                $setting->set('xtype','textfield');
-                $setting->set('value','p');
-                $setting->save();
-            }
-            unset($setting);
-            break;
-        case xPDOTransport::ACTION_UNINSTALL:
-            $success= true;
-            break;
-    }
+	switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+		case xPDOTransport::ACTION_INSTALL:
+		case xPDOTransport::ACTION_UPGRADE:
+			$object->xpdo->log(xPDO::LOG_LEVEL_INFO,'Attempting to fix forced_root_block setting for TypoMCE.');
+			/* @var modSystemSetting $setting */
+			$setting = $object->xpdo->getObject('modSystemSetting',array('key' => 'tiny.forced_root_block'));
+			if ($setting && $setting->get('xtype') == 'combo-boolean') {
+				$setting->set('xtype','textfield');
+				$setting->set('value','p');
+				$setting->save();
+			}
+			unset($setting);
+			break;
+		case xPDOTransport::ACTION_UNINSTALL:
+			$success= true;
+			break;
+	}
 }
 
 return $success;
