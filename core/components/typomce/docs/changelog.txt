@@ -3,7 +3,7 @@ TypoMCE 4.4.4
 ====================================
 - Forked and renamed to "TypoMCE"
 - Added plugin "typograf"
-
+- TinyMCE editor updated to version 3.5.8
 
 
 
