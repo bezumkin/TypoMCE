@@ -4,8 +4,8 @@
 define('PKG_NAME', 'TypoMCE');
 define('PKG_NAME_LOWER', strtolower(PKG_NAME));
 
-define('PKG_VERSION', '4.4');
-define('PKG_RELEASE', 'pl');
+define('PKG_VERSION', '4.4.0');
+define('PKG_RELEASE', 'pl1');
 
 
 /* define paths */
@@ -37,4 +37,4 @@ define('BUILD_PLUGIN_UPDATE', true);
 
 //define('BUILD_CHUNK_STATIC', false);
 //define('BUILD_SNIPPET_STATIC', false);
-define('BUILD_PLUGIN_STATIC', true);
+define('BUILD_PLUGIN_STATIC', false);

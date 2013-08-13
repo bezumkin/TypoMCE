@@ -1,5 +1,9 @@
 ﻿﻿
-TypoMCE 4.4.4
+TypoMCE 4.4.4 pl1
+====================================
+- Fixed "insert link" dialog
+
+TypoMCE 4.4.4 pl
 ====================================
 - Forked and renamed to "TypoMCE"
 - Upgrade TinyMCE to 3.5.8

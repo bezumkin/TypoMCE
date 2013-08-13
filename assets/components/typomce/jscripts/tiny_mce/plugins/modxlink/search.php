@@ -13,7 +13,7 @@ $query = $modx->getOption('q',$_REQUEST,'');
 
 $c = $modx->newQuery('modResource');
 $c->where(array(
-    $searchMode.':LIKE' => '%'.$query.'%',
+	$searchMode.':LIKE' => '%'.$query.'%',
 ));
 
 $count = $modx->getCount('modResource',$c);
@@ -22,8 +22,8 @@ $c->select(array('id','pagetitle','alias'));
 $c->limit(10);
 
 $resources = $modx->getCollection('modResource',$c);
-
+/* @var modResource $resource */
 foreach ($resources as $resource) {
-    echo $resource->get('pagetitle').' ('.$resource->get('id').')|'.$resource->get('id')."\n";
+	echo $resource->get('pagetitle').' ('.$resource->get('id').')|'.$resource->get('id')."\n";
 }
 die();
